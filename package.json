@@ -12,7 +12,5 @@
 , "engines" : ["node >= 0.3.6"]
 , "main" : "./main"
 , "scripts": { "test": "node tests/run.js" }
-, "dependencies": {
-	"qs" : "*",
-}
+, "dependencies": {"qs" : "*"}
 }
