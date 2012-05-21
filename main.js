@@ -29,7 +29,11 @@ var http = require('http')
   , tunnel = require('./tunnel')
   , aws = require('./aws')
   ;
-  
+
+
+qs.unescape = (s) ->
+    return decodeURIComponent(s.replace(/\+/g, ' '))
+
 if (process.logging) {
   var log = process.logging('request')
 }
