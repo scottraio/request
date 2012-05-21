@@ -31,9 +31,10 @@ var http = require('http')
   ;
 
 
-qs.unescape = (s) ->
-    return decodeURIComponent(s.replace(/\+/g, ' '))
-
+qs.unescape = function(s) {
+  return decodeURIComponent(s.replace(/\+/g, ' '))
+}
+    
 if (process.logging) {
   var log = process.logging('request')
 }
